@@ -1,13 +1,133 @@
-body {
+
+/* Reset default margin and padding */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* global font and some basic styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Container styles for centering content */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login form styles */
+.login-form {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.login-form h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.login-form input[type='email'],
+.login-form input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form input[type='email']:focus,
+.login-form input[type='password']:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.login-form .error-message {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.login-form .reset-password-link {
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.login-form button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-form button:hover {
+  background-color: #2980b9;
+}
+/* Add styles for the coin table */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.coin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.coin-table th,
+.coin-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.coin-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+}
+
+.coin-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.coin-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.coin-table td img {
+  max-width: 50px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
