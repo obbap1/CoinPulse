@@ -94,7 +94,7 @@ body {
 /* Add styles for the coin table */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -129,5 +129,16 @@ body {
   max-width: 50px;
   height: auto;
   display: block;
-  margin: 0 auto;
+}
+
+.flatten img {
+  line-height: 1;
+  position: relative;
+  justify-content: start;
+  float: left;
+}
+
+.flatten p {
+  float: left;
+  margin: 3%;
 }
